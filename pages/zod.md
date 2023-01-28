@@ -24,5 +24,5 @@ title: V3
 ---
 
 <div class="h-full flex flex-col text-center place-items-center place-content-center">
-    <img width=400 src="assets/zod.svg"/> 
+    <img width=400 src="/assets/zod.svg"/> 
 </div>

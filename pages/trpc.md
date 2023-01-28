@@ -24,5 +24,5 @@ title: V3
 ---
 
 <div class="h-full flex flex-col text-center place-items-center place-content-center">
-    <img width=600 src="assets/trpc.svg"/> 
+    <img width=600 src="/assets/trpc.svg"/> 
 </div>
