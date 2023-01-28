@@ -33,7 +33,7 @@ style MU stroke:#fff;,stroke-width:2px
 
 <div>
 Example Prisma Schema
-```ts {all|10-15|17-23}
+```prisma {all|10-15|17-23}
 generator client {
   provider = "prisma-client-js"
 }

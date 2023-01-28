@@ -42,7 +42,7 @@ style UT stroke:#27609e;,stroke-width:2px
 
 <div>
 Prisma Schema
-```ts
+```prisma
 model User {
   id String @id @default(uuid())
   name String
