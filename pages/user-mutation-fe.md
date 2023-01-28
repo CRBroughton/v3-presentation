@@ -24,7 +24,7 @@ title: Why V3?
 ---
 <div class="flex gap-10">
 <div>
-```mermaid {scale: 0.7}
+```mermaid {scale: 0.58}
 graph TB
 MU['User' Model]
 MU --> UT
@@ -32,17 +32,20 @@ MU --> MM
 MM['User' Model Migration]
 MM --> DB
 UT(('User' Type))
-UT --> UM
-UT --> FRNTUM
+UT <--> UM
 UM{'User' Mutation}
 DB[(Database)]
-DB --> UM
+DB <--> UT
 FRNTUM([Front End Mutation])
-FRNTUM <--> UM
+UT2(('User' Type))
+UM <--> UT2
+UT2 <--> FRNTUM
+
 style MU stroke:#fff;,stroke-width:2px
 style MM stroke:#fff;,stroke-width:2px
 style DB stroke:#fff;,stroke-width:2px
 style UT stroke:#27609e;,stroke-width:2px
+style UT2 stroke:#27609e;,stroke-width:2px
 style FRNTUM stroke:#42b883;,stroke-width:2px
 ```
 </div>

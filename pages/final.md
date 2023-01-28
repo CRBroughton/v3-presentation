@@ -22,44 +22,9 @@ drawings:
 css: unocss
 title: V3
 ---
-<h1 class="pb-12">A Journey Through V3...</h1>
 
-<div class="grid grid-cols-2">
-<ul>
-  <li>Nuxt
-    <ul>
-      <li>Meta-framework foundation</li>
-    </ul>
-  </li>
-  <li>Prisma
-    <ul>
-      <li>Models & database interactions</li>
-      <li>Auto-generated types</li>
-      <li>Automated migrations</li>
-      <li>Data queries & mutations</li>
-    </ul>
-  </li>
-</ul>
-<ul>
-  <li>Zod
-    <ul>
-      <li>Schema validation</li>
-    </ul>
-  </li>
-  <li>TRPC
-    <ul>
-      <li>End-to-end type-safety</li>
-    </ul>
-  </li>
-  <li>TS-Pattern
-    <ul>
-    <li>Pattern matching responses</li>
-    </ul>
-  </li>
-  <li>Tailwind
-    <ul>
-      <li>Rapid front end development</li>
-    </ul>
-  </li>
-</ul>
+<div class="h-full flex flex-col text-center place-items-center place-content-center">
+<h1>Thank you for listening!</h1>
+<p class="pt-3">Check out V3 at https://github.com/crbroughton/V3</p>
 </div>
+

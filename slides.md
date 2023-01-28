@@ -23,7 +23,12 @@ drawings:
 css: unocss
 ---
 
-## Good morning
+# V3
+<p>A T3 inspired Nuxt Stack</p>
+
+---
+src: ./pages/inspiration.md
+---
 
 ---
 src: ./pages/typescript.md
@@ -73,3 +78,6 @@ src: ./pages/user-mutation.md
 src: ./pages/user-mutation-fe.md
 ---
 
+---
+src: ./pages/final.md
+---

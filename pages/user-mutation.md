@@ -32,10 +32,10 @@ MU --> MM
 MM['User' Model Migration]
 MM --> DB
 UT(('User' Type))
-UT --> UM
+UT <--> UM
 UM{'User' Mutation}
 DB[(Database)]
-DB --> UM
+DB <--> UT
 style MU stroke:#fff;,stroke-width:2px
 style MM stroke:#fff;,stroke-width:2px
 style DB stroke:#fff;,stroke-width:2px
