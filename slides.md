@@ -75,6 +75,10 @@ src: ./pages/user-mutation.md
 ---
 
 ---
+src: ./pages/global-router.md
+---
+
+---
 src: ./pages/user-mutation-fe.md
 ---
 

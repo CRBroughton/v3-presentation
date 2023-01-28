@@ -22,7 +22,7 @@ drawings:
 css: unocss
 title: Why V3?
 ---
-<div class="flex gap-1">
+<div class="flex gap-10">
 <div>
 ```mermaid {scale: 0.7}
 graph TB
@@ -43,36 +43,15 @@ style UT stroke:#27609e;,stroke-width:2px
 ```
 </div>
 
-```ts {all|5-26|2|7-10|11|7-11|12-15|15-21|22-25}
-import { z } from 'zod'
-import type { User } from '@prisma/client'
-import { TRPCError } from '@trpc/server'
+```ts {all|2|4-6|8}
+import { router } from './trpc'
+import { userRouter } from './routers/user'
 
-export const userRouter = router({
-  createUser: publicProcedure
-    .input(z.object({
-      id: z.string(),
-      name: z.string(),
-      email: z.string(),
-    }) satisfies z.Schema<User>)
-    .mutation(async (req) => {
-      const user = await req.ctx.prisma.user.create({
-        data: req.input,
-      })
-      if (!user) {
-        return {
-          type: 'error',
-          error: new TRPCError({ message: 'failed to create a user', code: 'INTERNAL_SERVER_ERROR' }),
-        } as const
-      }
-      return {
-        type: 'ok',
-        data: user,
-      } as const
-    }),
+export const appRouter = router({
+  user: userRouter,
 })
 
-
+export type AppRouter = typeof appRouter
 ```
 
 <style>
