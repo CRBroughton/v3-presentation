@@ -50,7 +50,7 @@ style FRNTUM stroke:#42b883;,stroke-width:2px
 ```
 </div>
 
-```ts {all|1|6|8-22|9|11-15|16-19|20|8-22}
+```ts {all|1|5|8-22|9|11-15|16-19|20|8-22}
 import type { User } from '@prisma/client'
 import { match } from 'ts-pattern'
 
