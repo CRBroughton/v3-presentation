@@ -23,27 +23,9 @@ css: unocss
 title: Why V3?
 ---
 <div class="flex gap-10">
-<div>
-```mermaid {scale: 0.7}
-graph TB
-MU['User' Model]
-MU --> UT
-MU --> MM
-MM['User' Model Migration]
-MM --> DB
-UT(('User' Type))
-UT <--> UM
-UM{'User' Mutation}
-DB[(Database)]
-DB <--> UT
-style MU stroke:#fff;,stroke-width:2px
-style MM stroke:#fff;,stroke-width:2px
-style DB stroke:#fff;,stroke-width:2px
-style UT stroke:#27609e;,stroke-width:2px
-```
-</div>
-
-```ts {all|2|4-6|8}
+  <div>
+    <p>Global router</p>
+```ts {all|2|4-6|8|0}
 import { router } from './trpc'
 import { userRouter } from './routers/user'
 
@@ -53,16 +35,34 @@ export const appRouter = router({
 
 export type AppRouter = typeof appRouter
 ```
+  </div>
 
-<style>
-.footnotes-sep {
-  @apply mt-20 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
+  <div>
+    <p>TRPC client plugin</p>
+```ts {0|all|3|6-7|16-20}
+import { createTRPCNuxtClient, httpBatchLink } from 'trpc-nuxt/client'
+import superjson from 'superjson'
+import type { AppRouter } from '~~/server/api/router'
+
+export default defineNuxtPlugin(() => {
+  // Consumes the AppRouter type
+  const client = createTRPCNuxtClient<AppRouter>({
+    transformer: superjson,
+    links: [
+      httpBatchLink({
+        url: '/api/trpc',
+      }),
+    ],
+  })
+
+  return {
+    provide: {
+      client, // provides a type-safe client for the front-end
+    },
+  }
+})
+
+```
+</div>
+
 </div>
