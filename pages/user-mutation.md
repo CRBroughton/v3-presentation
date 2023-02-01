@@ -43,7 +43,7 @@ style UT stroke:#27609e;,stroke-width:2px
 ```
 </div>
 
-```ts {all|5-26|2|7-10|11|7-11|12-15|15-21|22-25}
+```ts {all|5-27|2|7-10|11|7-11|12-15|15-21|22-25}
 import { z } from 'zod'
 import type { User } from '@prisma/client'
 import { TRPCError } from '@trpc/server'
