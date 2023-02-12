@@ -70,6 +70,6 @@ CREATE TABLE "Task" (
 </div>
 
 <!--
-- Primsa generates migrations
+- Prisma generates migrations
 - Can manually create migrations
 -->
