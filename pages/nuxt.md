@@ -26,3 +26,11 @@ title: V3
 <div class="h-full flex flex-col text-center place-items-center place-content-center">
     <img width=600 src="/assets/full-logo-green-light.svg"/> 
 </div>
+
+<!--
+- Nuxt - Vue Metaframework
+- Offers various rendering solutions
+- Has various built in functionality I'd normally include
+- Includes server + client in one deployable bundle
+- Compiliation can require type-safe code
+-->

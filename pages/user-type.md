@@ -72,3 +72,7 @@ export type User = {
 }
 </style>
 </div>
+
+<!--
+- User type generated, matches model
+-->

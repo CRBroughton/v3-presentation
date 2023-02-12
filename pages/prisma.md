@@ -26,3 +26,10 @@ title: V3
 <div class="h-full flex flex-col text-center place-items-center place-content-center">
     <img width=600 src="/assets/Prisma-LightLogo.svg"/> 
 </div>
+
+<!--
+- Primsa - type-safe database ORM
+- Human-readable database schema
+- Includes a type-safe database client
+- Hassle free database migrations
+-->

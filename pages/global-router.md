@@ -66,3 +66,13 @@ export default defineNuxtPlugin(() => {
 </div>
 
 </div>
+
+<!--
+- Global router
+- Imports the routers and adds them to the exported
+global router
+- Exports a type to define the global router
+- Import AppRouter type
+- Pass type to client for type inference
+- Return type-safe client to the front end
+-->

@@ -26,3 +26,10 @@ title: V3
 <div class="h-full flex flex-col text-center place-items-center place-content-center">
     <img width=300 src="/assets/ts-logo-512.svg"/> 
 </div>
+
+<!--
+- Typescript - Superset language of JS
+- Adds types to Javascript to enable type-safe code
+- Can be used on back-end and front-end
+- Good choice language to deliver end-to-end type-safe framework
+-->

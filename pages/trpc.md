@@ -26,3 +26,9 @@ title: V3
 <div class="h-full flex flex-col text-center place-items-center place-content-center">
     <img width=600 src="/assets/trpc.svg"/> 
 </div>
+
+<!--
+- TRPC - framework agnostic type-safe api's
+- Shared types across your back-end and front-end
+- Glue that holds the framework together
+-->

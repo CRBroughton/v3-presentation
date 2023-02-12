@@ -93,3 +93,15 @@ export const store = () => {
 }
 </style>
 </div>
+
+<!--
+- Mention the graph
+- Import same User type from Prisma
+- Destructuring the type-safe client from previous slide
+- Create a User ref to store the user data
+- 'createUser' function
+- Access type-safe TRPC client
+- Destructuring the backend responses
+- Pattern matching against the type of response
+- Exhaustively checking each possible response type
+-->

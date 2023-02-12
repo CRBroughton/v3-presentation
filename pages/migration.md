@@ -68,3 +68,8 @@ CREATE TABLE "Task" (
 }
 </style>
 </div>
+
+<!--
+- Primsa generates migrations
+- Can manually create migrations
+-->

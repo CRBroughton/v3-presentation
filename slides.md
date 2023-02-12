@@ -26,6 +26,10 @@ css: unocss
 # V3
 <p>A T3 inspired Nuxt Stack</p>
 
+<!--
+- What is V3 - Typesafe framework built on Nuxt
+- Why V3? - Delivery an end-to-end typesafe experience
+-->
 ---
 src: ./pages/inspiration.md
 ---

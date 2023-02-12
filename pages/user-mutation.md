@@ -87,3 +87,13 @@ export const userRouter = router({
 }
 </style>
 </div>
+
+<!--
+- Talk about the graph - mutation has to go through type
+- Routers/namespaces, procedures/functional-endpoints
+- Import prisma type
+- Validate input with Zod - satisfies the user type
+- Mutate the database with typesafe client
+- Typesafe responses, mention 'as const' which
+narrows the type to be specific
+-->

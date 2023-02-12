@@ -26,3 +26,8 @@ title: V3
 <div class="h-full flex flex-col text-center place-items-center place-content-center">
     <img width=600 src="/assets/tailwind.svg"/> 
 </div>
+
+<!--
+- TailwindCSS - CSS utility framework
+- Develop fast - Experienced with tailwind
+-->

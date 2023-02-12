@@ -28,3 +28,8 @@ title: V3
 <p class="pt-3">Check out V3 at https://github.com/crbroughton/V3</p>
 </div>
 
+<!--
+- Thank you for listening
+- Any questions, Slack
+- Dev-discussion with links
+-->

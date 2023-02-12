@@ -72,3 +72,8 @@ model Task {
 }
 </style>
 </div>
+
+<!--
+- Start with the Prisma schema - defines your models
+- Supports typicial db relations
+-->

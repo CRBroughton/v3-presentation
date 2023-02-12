@@ -11,3 +11,10 @@
         <h6>ping.gg</h6>
     </div>
 </div>
+
+<!--
+- Theo Browne - Ex Twitch.TV Engineer
+- Creator of T3 stack - React version of V3
+- Youtuber, talks about typesafety
+- Start talking about the tech used in V3
+-->
